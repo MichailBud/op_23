@@ -40,3 +40,9 @@ int contrast(std::vector<int> Vector){
     }
     return (Max - Min);
     }
+
+int contrast2(std::vector<int> v){
+    if (!(v.size > 1)) throw int();
+	auto [min, max] = std::minmax_element(begin(v), end(v));
+	return (*max-*min);	
+}
