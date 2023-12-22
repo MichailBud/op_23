@@ -32,3 +32,11 @@ TEST_CASE("Площадь не норма"){
      CHECK_THROWS(square(-20, 20));
      CHECK_THROWS(square(-20, -20));
 }
+
+TEST_CASE("Проверка вектора"){
+
+    CHECK(contrast({1, 2, 3, 4, 5}) == 4);
+    CHECK(contrast({-10, 25, 30, 45, 50}) == 60);
+    CHECK(contrast({1, -2, 3, 64, 57}) == 66);
+    CHECK(contrast({13, 23, 35, 44, -5}) == 49);
+}

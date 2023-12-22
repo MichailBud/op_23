@@ -33,7 +33,7 @@ int contrast(std::vector<int> Vector){
 
     int Min{Vector[0]};
 
-    for (auto element : V) {
+    for (auto element : Vector) {
 
         if (element > Max) Max = element;
         if (element < Min) Min = element;
