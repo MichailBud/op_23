@@ -27,3 +27,16 @@ void write_1000(std::string word){  // Пишет введённое слово 
     }
 }
 
+int contrast(std::vector<int> Vector){
+
+    int Max{Vector[0]};
+
+    int Min{Vector[0]};
+
+    for (auto element : V) {
+
+        if (element > Max) Max = element;
+        if (element < Min) Min = element;
+    }
+    return (Max - Min);
+    }
