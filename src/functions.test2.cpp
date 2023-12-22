@@ -21,7 +21,14 @@ TEST_CASE("Сумма"){
     CHECK(sum(-100, 298) == 198);
 }
 
-TEST_CASE("Площадь"){
+TEST_CASE("Площадь норма"){
 
-    CHECK(square(200, 50) == 10000);
+     CHECK(square(200, 50) == 10000);
+     CHECK(square(20, 20) == 400);
+}
+TEST_CASE("Площадь не норма"){
+
+     CHECK_THROWS(square(200, -50));
+     CHECK_THROWS(square(-20, 20));
+     CHECK_THROWS(square(-20, -20));
 }

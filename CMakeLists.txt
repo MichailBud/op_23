@@ -13,7 +13,7 @@ add_executable(${PROJECT_NAME}
 
 add_executable(test
     src/functions.cpp
-    src/functions.test.cpp
+    src/functions.test2.cpp
 )
 
 target_link_libraries(test
